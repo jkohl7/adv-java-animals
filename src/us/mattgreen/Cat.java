@@ -6,6 +6,7 @@ package us.mattgreen;
 public class Cat extends Pet implements Talkable {
     private int mousesKilled;
 
+
     public Cat(int mousesKilled, String name) {
         super(name);
         this.mousesKilled = mousesKilled;
