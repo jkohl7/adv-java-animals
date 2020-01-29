@@ -27,6 +27,7 @@ public class Main {
         inFile.fileRead();
         inFile.fileClose();
 
+        
         FileInput indata = new FileInput("animals.txt");
         String line;
         while ((line = indata.fileReadLine()) != null) {
