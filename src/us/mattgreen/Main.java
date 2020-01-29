@@ -17,7 +17,8 @@ public class Main {
         zoo.add(new Teacher(44, "Stacy Read"));
         // End Lines to Replace
 
-        userChoice.menu();
+        userChoice menu = new userChoice();
+        menu.menu(zoo);
 
         for (Talkable thing : zoo) {
             printOut(thing);
