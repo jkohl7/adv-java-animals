@@ -27,7 +27,7 @@ public class userChoice {
                 do {
                     correct = true;
                     System.out.println("What is the dog's name?");
-                    dogName = keyboard.next();
+                    dogName = keyboard.nextLine();
                     try {
                         InputTypeVerifier.name(dogName);
                     } catch (noInputException e) {
@@ -42,7 +42,7 @@ public class userChoice {
                 do {
                     correct = true;
                     System.out.println("Is the dog friendly? (Y/N)");
-                    String reply = keyboard.next();
+                    String reply = keyboard.nextLine();
                     try {
                         InputTypeVerifier.yesNo(reply);
                     } catch (noInputException e) {
@@ -67,7 +67,7 @@ public class userChoice {
                 do{
                 correct = true;
                 System.out.println("What is the cat's name?");
-                catName = keyboard.next();
+                catName = keyboard.nextLine();
                 try {
                     InputTypeVerifier.name(catName);
                 } catch (noInputException e) {
